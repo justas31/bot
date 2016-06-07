@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/javascripto/basicBot-v2/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/justas31/bot/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -241,18 +241,18 @@
         status: false,
         name: "basicBot v2",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/javascripto/basicBot-v2/master/basicBot.js",
+        scriptLink: "https://rawgit.com/justas31/bot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/javascripto/basicBot-v2/master/lang/en.json",
+        chatLink: "https://rawgit.com/justas31/bot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot v2",
+            botName: "botas",
             language: "english",
-            chatLink: "https://rawgit.com/javascripto/basicBot-v2/master/lang/en.json",
-            scriptLink: "https://rawgit.com/javascripto/basicBot-v2/master/basicBot.js",
+            chatLink: "https://rawgit.com/justas31/bot/master/lang/en.json",
+            scriptLink: "https://rawgit.com/justas31/bot/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 200, // 1-200
             startupVolume: 20, // 0-100
@@ -310,9 +310,9 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/javascripto/basicBot-v2/master/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/javascripto/basicBot-v2/master/blacklists/OPlist.json",
-                BANNED: "https://rawgit.com/javascripto/basicBot-v2/master/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/justas31/bot/master/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/justas31/bot/master/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/justas31/bot/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
@@ -2478,7 +2478,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://rawgit.com/javascripto/basicBot-v2/master/lang/langIndex.json", function (json) {
+                        $.get("https://rawgit.com/justas31/bot/master/lang/langIndex.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
