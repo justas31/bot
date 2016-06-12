@@ -248,7 +248,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot-v2",
+            botName: "Botuks",
             language: "lithuanian",
             chatLink: "https://rawgit.com/javascripto/basicBot-v2/master/lang/ltu.json",
             scriptLink: "https://rawgit.com/javascripto/basicBot-v2/master/basicBot-test.js",
@@ -292,7 +292,7 @@
             motdEnabled: false,
             motdInterval: 5,
             motd: "Temporary Message of the Day",
-            filterChat: true,
+            filterChat: false,
             etaRestriction: false,
             welcome: true,
             opLink: null,
