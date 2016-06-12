@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/javascripto/basicBot-v2/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/justas31/bot/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -240,17 +240,17 @@
         status: false,
         name: "basicBot-v2",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/javascripto/basicBot-v2/master/basicBot-test.js",
+        scriptLink: "https://rawgit.com//justas31/bot/basicBot-test.js",
         cmdLink: "https://git.io/vofmh",
-        chatLink: "https://rawgit.com/javascripto/basicBot-v2/master/lang/ltu.json",
+        chatLink: "https://rawgit.com/justas31/bot/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
             botName: "Botuks",
-            language: "lithuanian",
-            chatLink: "https://rawgit.com/javascripto/basicBot-v2/master/lang/ltu.json",
+            language: "Lithuanian",
+            chatLink: "https://rawgit.com/justas31/bot/lang/en.json",
             scriptLink: "https://rawgit.com/javascripto/basicBot-v2/master/basicBot-test.js",
             roomLock: false, // Requires an extension to re-load the script
             autowoot: true,
@@ -2474,7 +2474,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://rawgit.com/javascripto/basicBot-v2/master/lang/langIndex.json", function (json) {
+                        $.get("https://rawgit.com/javascripto/justas31/bot/lang/langIndex.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
