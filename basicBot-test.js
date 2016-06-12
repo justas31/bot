@@ -253,9 +253,6 @@
             chatLink: "https://rawgit.com/javascripto/basicBot-v2/master/lang/ltu.json",
             scriptLink: "https://rawgit.com/javascripto/basicBot-v2/master/basicBot-test.js",
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 1, // 1-200
-            startupVolume: 20, // 0-100
-            startupEmoji: false, // true or false
             autowoot: true,
             autoskip: false,
             smartSkip: true,
