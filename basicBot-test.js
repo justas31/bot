@@ -275,8 +275,8 @@
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: false,
-            thorCooldown: 10,
+            thorCommand: true,
+            thorCooldown: 30,
             skipPosition: 3,
             skipReasons: [
                 ["theme", "This song does not fit the room theme. "],
