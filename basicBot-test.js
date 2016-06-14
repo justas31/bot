@@ -659,6 +659,8 @@
                     if (typeof djlist[i] !== 'undefined') {
                         var id = djlist[i].id;
                         var user = basicBot.userUtilities.lookupUser(id);
+                 var votes = user.votes;
+                     if (votes < 1){
                         if (typeof user !== 'boolean') {
                             var plugUser = basicBot.userUtilities.getUser(user);
                             if (rank !== null && basicBot.userUtilities.getPermission(plugUser) <= rank) {
@@ -698,7 +700,8 @@
                                         }
                                         user.afkWarningCount = 0;
                                     }
-                                }
+                                  }
+                              }
                             }
                         }
                     }
